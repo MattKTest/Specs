@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = 'MIT'
   s.author       = { "Matt Krueger" => "matt.krueger@arthrex.com" }
   s.source       = { :git => "https://git.arthrex.com/marketing/arthrexkit.git", :tag => "0.0.3" }
-  s.source_files = 'LibraryFiles/*'
+  s.source_files = 'LibraryFiles/*.{h,m}', 'LibraryFiles/**/*.{h,m}'
   s.exclude_files = 'Classes/Exclude'
   s.requires_arc = true
   s.dependency 'AFNetworking', '~> 1.3.1'
